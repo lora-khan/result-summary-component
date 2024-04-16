@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Results summary component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="min-h-screen flex justify-center items-center bg-slate-100 my-5 md:my-0">
+      <!-- cibtauber -->
+      <div class="bg-white rounded-2xl shadow-2xl space-y-8 flex items-center flex-col md:flex-row md:space-x-8 md:space-y-0">
+        <!-- left -->
+        <div
+          class="bg-gradient-to-t from-indigo-700 to-indigo-600 rounded-xl px-10 py-5"
+        >
+          <!-- score -->
+          <div>
+            <!-- up -->
+            <div class="flex flex-col items-center space-y-4">
+              <h2 class="text-slate-300">Your Result</h2>
+              <!-- score box -->
+              <div
+                class="w-32 h-32 rounded-full bg-indigo-700 flex flex-col items-center justify-center space-y-1"
+              >
+                <h1 class="text-white font-bold text-5xl">76</h1>
+                <p class="text-slate-400">of 100</p>
+              </div>
+            </div>
+            <!-- down -->
+            <div
+              class="w-48 text-white flex flex-col items-center space-y-3 justify-center my-5"
+            >
+              
+                <h2 class="text-white text-center font-bold text-2xl">Great</h2>
+                <p class="text-sm text-center text-slate-200 font-widest leading-2">
+                  Your Score is higher than 65% of the people who have taken
+                  these tests.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- summary -->
+          <div class="px-5">
+            <h2 class="text-lg font-semibold text-slate-800">Summary</h2>
+            <div class="flex flex-col space-y-3 mt-5">
+              <div class="shadow flex justify-between bg-red-50 p-2 rounded-md w-52">
+                <div class="flex space-x-2">
+                  <img src="./assets/images/icon-reaction.svg" alt="">
+                  <span class="text-red-400">Reaction</span>
+                </div>
+                <div>
+                  <span class="font-semibold">80</span>/100
+                </div>
+              </div>
+              <div class="shadow flex w-52 justify-between bg-yellow-50 p-2 rounded-md">
+                <div class="flex space-x-2">
+                  <img src="./assets/images/icon-memory.svg" alt="">
+                  <span class="text-amber-400">Memory</span>
+                </div>
+                <div>
+                  <span class="font-semibold">92</span>/100
+                </div>
+              </div>
+              <div class="shadow flex justify-between w-52 bg-green-50 p-2 rounded-md">
+                <div class="flex space-x-2">
+                  <img src="./assets/images/icon-verbal.svg" alt="">
+                  <span class="text-teal-400">Verbal</span>
+                </div>
+                <div>
+                  <span class="font-semibold">61</span>/100
+                </div>
+              </div>
+              <div class="shadow flex w-52 justify-between bg-indigo-50 p-2 rounded-md">
+                <div class="flex space-x-2">
+                  <img src="./assets/images/icon-visual.svg" alt="">
+                  <span class="text-indigo-400">Visual</span>
+                </div>
+                <div>
+                  <span class="font-semibold">72</span>/100
+                </div>
+              </div>
+              
+            </div>
+            <button class=" my-4 bg-slate-800 px-8 w-full text-white rounded-full py-2">Continue</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
